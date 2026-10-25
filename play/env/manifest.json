@@ -1,0 +1,317 @@
+{
+  "generated": "2026-10-25",
+  "note": "One entry per world. hdr.high = Poly Haven 1k (1024x512) HDR, hdr.low = 512x256 (2x2 box filter of the 1k). Load with HDRLoader + PMREMGenerator.fromEquirectangular. sky = 2048x1024 sRGB JPG background (EquirectangularReflectionMapping, SRGBColorSpace). sun_dir = direction of the brightest texel in three.js world space (equirectUv convention); upper/lower_mean_rgb = solid-angle-weighted linear mean of the upper / lower hemisphere (useful for hemisphere light / fog colours). bytes = file sizes. sky_4k (high tier) / sky (2048, low + medium tier): sRGB JPG with exposure + three.js ACES Filmic + grade baked in; three draws an SRGBColorSpace background without tone mapping, so it shows exactly as baked. horizon = mean sky colour 0-4 deg above the horizon over all azimuths (fog colour), horizon_toward_sun / horizon_away_from_sun = the same within +-45 deg of the sun azimuth / its opposite, zenith = 80-90 deg; all averaged in linear light. sun_color = colour of the sun (excess over its 5-8 deg surroundings) in the 4k HDR, normalised to max 1. sun_to_sky = sun irradiance / horizontal sky irradiance in the HDR; sun_intensity_hint = that ratio relative to glass (= 1); sun_irradiance_rel = raw sun irradiance relative to glass (Poly Haven HDRIs are not on one exposure scale, prefer the hint). sky_legacy = the previous JPG, kept unchanged.",
+  "worlds": {
+    "glass": {
+      "hdri": "kloofendal_48d_partly_cloudy_puresky",
+      "page": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+      "license": "CC0 1.0",
+      "look": "day",
+      "hdr": {
+        "high": "env/kloofendal_48d_partly_cloudy_puresky_1k.hdr",
+        "low": "env/kloofendal_48d_partly_cloudy_puresky_512.hdr"
+      },
+      "hdr_grade": null,
+      "sky": "env/glass_sky.jpg",
+      "sky_4k": "env/glass_sky_4k.jpg",
+      "sky_legacy": "env/day_sky.jpg",
+      "sky_source": "4k HDR, three.js ACES Filmic at exposure 0.6844 + sRGB, baked in (draw without tone mapping)",
+      "sky_grade": null,
+      "horizon": "#9fa4ae",
+      "horizon_toward_sun": "#c3c8d0",
+      "horizon_away_from_sun": "#828694",
+      "zenith": "#a8aebb",
+      "sun_dir": [
+        0.554,
+        0.742,
+        0.378
+      ],
+      "sun_elevation_deg": 47.9,
+      "sun_peak_rgb": [
+        60138.9,
+        61423.9,
+        54998.8
+      ],
+      "upper_mean_rgb": [
+        1.098,
+        1.168,
+        1.31
+      ],
+      "lower_mean_rgb": [
+        0.193,
+        0.225,
+        0.322
+      ],
+      "sun_color": "#fefff5",
+      "sun_to_sky": 3.149,
+      "bytes": {
+        "hdr_high": 1435119,
+        "hdr_low": 378924,
+        "sky": 79355,
+        "sky_4k": 322316
+      },
+      "sun_intensity_hint": 1,
+      "sun_irradiance_rel": 1
+    },
+    "neon": {
+      "hdri": "qwantani_night_puresky",
+      "page": "https://polyhaven.com/a/qwantani_night_puresky",
+      "license": "CC0 1.0",
+      "look": "night (sky JPG hand-graded darker)",
+      "hdr": {
+        "high": "env/qwantani_night_puresky_1k.hdr",
+        "low": "env/qwantani_night_puresky_512.hdr"
+      },
+      "hdr_grade": null,
+      "sky": "env/neon_sky.jpg",
+      "sky_4k": "env/neon_sky_4k.jpg",
+      "sky_legacy": "env/night_sky.jpg",
+      "sky_source": "4k HDR, three.js ACES Filmic at exposure 0.273 + sRGB, baked in (draw without tone mapping)",
+      "sky_grade": "3D LUT fitted from the hand grade of night_sky.jpg (rms 1.58/255)",
+      "horizon": "#5c667a",
+      "horizon_toward_sun": "#aec0cc",
+      "horizon_away_from_sun": "#00013e",
+      "zenith": "#010241",
+      "sun_dir": [
+        0.709,
+        0.015,
+        0.705
+      ],
+      "sun_elevation_deg": 0.8,
+      "sun_peak_rgb": [
+        16.6,
+        24.1,
+        25.1
+      ],
+      "upper_mean_rgb": [
+        0.843,
+        0.908,
+        0.901
+      ],
+      "lower_mean_rgb": [
+        0.488,
+        0.55,
+        0.544
+      ],
+      "sun_color": "#cff8ff",
+      "sun_to_sky": 0.03,
+      "bytes": {
+        "hdr_high": 1389258,
+        "hdr_low": 357142,
+        "sky": 35347,
+        "sky_4k": 264419
+      },
+      "sun_intensity_hint": 0.01,
+      "sun_irradiance_rel": 0.013
+    },
+    "frost": {
+      "hdri": "snow_field_puresky",
+      "page": "https://polyhaven.com/a/snow_field_puresky",
+      "license": "CC0 1.0",
+      "look": "bright cold overcast: pale grey-white cloud, a patch of blue upper left, soft sun glow; JPG cooled + lifted",
+      "hdr": {
+        "high": "env/snow_field_puresky_1k.hdr",
+        "low": "env/snow_field_puresky_512.hdr"
+      },
+      "hdr_grade": null,
+      "sky": "env/frost_sky.jpg",
+      "sky_4k": "env/frost_sky_4k.jpg",
+      "sky_legacy": null,
+      "sky_source": "4k HDR, three.js ACES Filmic at exposure 0.3834 + sRGB, baked in (draw without tone mapping)",
+      "sky_grade": "colortemperature=temperature=9000:mix=0.8,eq=brightness=0.05:contrast=1.08:gamma=1.12:saturation=0.85",
+      "horizon": "#959ca3",
+      "horizon_toward_sun": "#a4aab1",
+      "horizon_away_from_sun": "#868f97",
+      "zenith": "#a2abb3",
+      "sun_dir": [
+        0.699,
+        0.293,
+        0.653
+      ],
+      "sun_elevation_deg": 17,
+      "sun_peak_rgb": [
+        4.7,
+        3.2,
+        1.6
+      ],
+      "upper_mean_rgb": [
+        0.796,
+        0.795,
+        0.767
+      ],
+      "lower_mean_rgb": [
+        0.386,
+        0.384,
+        0.368
+      ],
+      "sun_color": "#ffd38d",
+      "sun_to_sky": 0.002,
+      "bytes": {
+        "hdr_high": 1128193,
+        "hdr_low": 320309,
+        "sky": 24428,
+        "sky_4k": 95324
+      },
+      "sun_intensity_hint": 0.001,
+      "sun_irradiance_rel": 0.001
+    },
+    "dunes": {
+      "hdri": "qwantani_late_afternoon_puresky",
+      "page": "https://polyhaven.com/a/qwantani_late_afternoon_puresky",
+      "license": "CC0 1.0",
+      "look": "clear sky, sun ~19 deg up; JPG: blue zenith, golden-orange haze band around the horizon and the sun",
+      "hdr": {
+        "high": "env/qwantani_late_afternoon_puresky_1k.hdr",
+        "low": "env/qwantani_late_afternoon_puresky_512.hdr"
+      },
+      "hdr_grade": null,
+      "sky": "env/dunes_sky.jpg",
+      "sky_4k": "env/dunes_sky_4k.jpg",
+      "sky_legacy": null,
+      "sky_source": "4k HDR, three.js ACES Filmic at exposure 0.7069 + sRGB, baked in (draw without tone mapping)",
+      "sky_grade": "split[a][b];[b]colortemperature=temperature=3300:mix=1:pl=0.5,eq=saturation=1.35:gamma=1.05[w];[a]colortemperature=temperature=5600:mix=0.6,eq=saturation=1.12[c];[c][w]blend=all_expr='A+(B-A)*0.9*exp(-pow((Y-H*0.48)/(H*0.16),2))'",
+      "horizon": "#e6a964",
+      "horizon_toward_sun": "#ffc573",
+      "horizon_away_from_sun": "#d4975a",
+      "zenith": "#526b80",
+      "sun_dir": [
+        0.763,
+        0.327,
+        0.557
+      ],
+      "sun_elevation_deg": 19.1,
+      "sun_peak_rgb": [
+        126445.9,
+        102287.6,
+        71961.1
+      ],
+      "upper_mean_rgb": [
+        1.96,
+        1.768,
+        1.54
+      ],
+      "lower_mean_rgb": [
+        0.29,
+        0.33,
+        0.377
+      ],
+      "sun_color": "#ffe8c7",
+      "sun_to_sky": 5.974,
+      "bytes": {
+        "hdr_high": 1115880,
+        "hdr_low": 308423,
+        "sky": 29888,
+        "sky_4k": 107973
+      },
+      "sun_intensity_hint": 1.897,
+      "sun_irradiance_rel": 1.719
+    },
+    "steel": {
+      "hdri": "belfast_sunset_puresky",
+      "page": "https://polyhaven.com/a/belfast_sunset_puresky",
+      "license": "CC0 1.0",
+      "look": "sunset at the horizon: lavender/pink cumulus, yellow-orange glow on the horizon; JPG warmed + more contrast",
+      "hdr": {
+        "high": "env/belfast_sunset_puresky_1k.hdr",
+        "low": "env/belfast_sunset_puresky_512.hdr"
+      },
+      "hdr_grade": null,
+      "sky": "env/steel_sky.jpg",
+      "sky_4k": "env/steel_sky_4k.jpg",
+      "sky_legacy": null,
+      "sky_source": "4k HDR, three.js ACES Filmic at exposure 0.2583 + sRGB, baked in (draw without tone mapping)",
+      "sky_grade": "colorbalance=rs=0.08:bs=-0.06:rm=0.10:gm=-0.02:bm=-0.08:rh=0.05:bh=-0.05,eq=contrast=1.12:saturation=1.25:gamma=0.95",
+      "horizon": "#ad9f88",
+      "horizon_toward_sun": "#f4edcb",
+      "horizon_away_from_sun": "#4f4140",
+      "zenith": "#9394a8",
+      "sun_dir": [
+        0.797,
+        0.04,
+        0.603
+      ],
+      "sun_elevation_deg": 2.3,
+      "sun_peak_rgb": [
+        35.6,
+        22.1,
+        8.8
+      ],
+      "upper_mean_rgb": [
+        1.552,
+        1.315,
+        1.548
+      ],
+      "lower_mean_rgb": [
+        0.922,
+        0.733,
+        0.779
+      ],
+      "sun_color": "#ffb95d",
+      "sun_to_sky": 0.018,
+      "bytes": {
+        "hdr_high": 1190247,
+        "hdr_low": 326340,
+        "sky": 48173,
+        "sky_4k": 209688
+      },
+      "sun_intensity_hint": 0.006,
+      "sun_irradiance_rel": 0.013
+    },
+    "orbit": {
+      "hdri": "qwantani_moon_noon_puresky",
+      "page": "https://polyhaven.com/a/qwantani_moon_noon_puresky",
+      "license": "CC0 1.0",
+      "look": "space: black sky, the moon as a small bright disc ~61 deg up (stars/planet are drawn by the game)",
+      "hdr": {
+        "high": "env/qwantani_moon_noon_puresky_space_1k.hdr",
+        "low": "env/qwantani_moon_noon_puresky_space_512.hdr"
+      },
+      "hdr_grade": {
+        "lo": 10,
+        "hi": 100,
+        "scale": 0.02,
+        "desat": 0.7
+      },
+      "sky": "env/space_sky.jpg",
+      "sky_4k": null,
+      "sky_legacy": null,
+      "sky_source": "Poly Haven tonemapped JPG",
+      "sky_grade": "hue=s=0.35,lutrgb=r='255*pow(clip((val/255-0.82)/0.18,0,1),2)':g='255*pow(clip((val/255-0.82)/0.18,0,1),2)':b='255*pow(clip((val/255-0.8)/0.2,0,1),2)'",
+      "horizon": null,
+      "horizon_toward_sun": null,
+      "horizon_away_from_sun": null,
+      "zenith": null,
+      "sun_dir": [
+        0.395,
+        0.872,
+        0.288
+      ],
+      "sun_elevation_deg": 60.7,
+      "sun_peak_rgb": [
+        63480,
+        57568.9,
+        56797.9
+      ],
+      "upper_mean_rgb": [
+        0.849,
+        0.773,
+        0.755
+      ],
+      "lower_mean_rgb": [
+        0.002,
+        0.003,
+        0.003
+      ],
+      "sun_color": null,
+      "sun_to_sky": null,
+      "bytes": {
+        "hdr_high": 1298975,
+        "hdr_low": 352119,
+        "sky": 25137,
+        "sky_4k": 0
+      },
+      "sun_intensity_hint": null,
+      "sun_irradiance_rel": null
+    }
+  }
+}

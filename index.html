@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKYLINE RUSH: a 3D physics ball racer by Plejarena</title>
+<meta name="description" content="SKYLINE RUSH: roll a ball along tracks floating above a city. 50 tracks, 6 worlds, real physics, HTML5. Available for full ownership or license.">
+<meta property="og:title" content="SKYLINE RUSH: a 3D physics ball racer">
+<meta property="og:image" content="poster.jpg">
+<style>
+  :root { --bg: #0b1020; --card: #141b33; --ink: #eef2ff; --dim: #9aa6c8; --cyan: #4fe3ff; --orange: #ff7a3d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--cyan); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 56px 0 28px; text-align: center; }
+  .by { color: var(--dim); letter-spacing: .14em; text-transform: uppercase; font-size: 13px; }
+  h1 { margin: 8px 0 6px; font-size: clamp(44px, 8vw, 86px); line-height: 1; letter-spacing: .02em; font-style: italic; font-weight: 900; }
+  h1 span { background: linear-gradient(90deg, var(--cyan), #9b7bff, var(--orange)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .tag { font-size: 20px; color: var(--dim); margin: 0 auto; max-width: 720px; }
+  .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 28px 0 8px; }
+  .btn { display: inline-block; padding: 15px 30px; border-radius: 12px; font-weight: 800; text-decoration: none; letter-spacing: .04em; }
+  .btn.play { background: linear-gradient(180deg, #5ee8ff, #1ab3e0); color: #04121c; box-shadow: 0 8px 30px #1ab3e055; }
+  .btn.alt { border: 2px solid #34406a; color: var(--ink); }
+  .note { color: var(--dim); font-size: 14px; text-align: center; }
+  video { width: 100%; border-radius: 16px; display: block; background: #000; box-shadow: 0 20px 60px #0008; }
+  section { padding: 34px 0; }
+  h2 { font-size: 28px; margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border-radius: 14px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; color: var(--cyan); }
+  .card p { margin: 0; color: var(--dim); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .shots img { width: 100%; border-radius: 10px; display: block; }
+  .worlds { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .worlds div { background: var(--card); border-radius: 12px; padding: 14px; }
+  .worlds b { display: block; }
+  .worlds small { color: var(--dim); }
+  .offer { background: linear-gradient(135deg, #18234a, #22163f); border-radius: 18px; padding: 28px; }
+  .offer .price { font-size: 34px; font-weight: 900; color: var(--orange); }
+  footer { padding: 40px 0 60px; color: var(--dim); text-align: center; font-size: 15px; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="by">Plejarena presents</div>
+  <h1><span>SKYLINE RUSH</span></h1>
+  <p class="tag">Roll a ball along tracks floating high above a city. Reach the goal as fast as you can, grab the gems and don't fall off.</p>
+  <div class="cta">
+    <a class="btn play" href="play/?unlock">PLAY NOW</a>
+    <a class="btn alt" href="#video">WATCH THE VIDEO</a>
+  </div>
+  <p class="note">Runs in the browser. Keyboard, gamepad or touch. In this review build all 50 tracks are unlocked.</p>
+</header>
+
+<main class="wrap">
+  <section id="video">
+    <video src="trailer.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+    <p class="note">43 seconds of gameplay from all 6 worlds. <a href="trailer.mp4" download>Download the MP4</a></p>
+  </section>
+
+  <section>
+    <h2>Why it plays great</h2>
+    <div class="grid">
+      <div class="card"><h3>Real rolling physics</h3><p>The ball truly rolls. Concrete, metal, ice, sand and rubber each have their own grip, bounce and rolling resistance.</p></div>
+      <div class="card"><h3>50 tracks, 6 worlds</h3><p>Banked curves, jumps, tunnels, rotating platforms, sliding blocks and sweeper arms. A track takes 30 to 110 seconds.</p></div>
+      <div class="card"><h3>Easy to learn</h3><p>One-sentence rules, instant restarts, gold, silver and bronze times on every track, and tracks that unlock in order.</p></div>
+      <div class="card"><h3>Made for Chromebooks</h3><p>Automatic quality settings. It holds 60 fps in our tests even on a slowed-down CPU, and the first world loads about 14 MB.</p></div>
+      <div class="card"><h3>Phones and tablets</h3><p>On-screen touch controls, plus keyboard and gamepad support.</p></div>
+      <div class="card"><h3>Family friendly</h3><p>No violence, chat, ads, external links or name entry. CC0 assets from Poly Haven, original sound and music.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Six worlds</h2>
+    <div class="worlds">
+      <div><b>Glass District</b><small>sunny skyline, metal and concrete</small></div>
+      <div><b>Frost Line</b><small>snow and slippery ice</small></div>
+      <div><b>Dune Towers</b><small>sand and bouncy rubber</small></div>
+      <div><b>Steel Works</b><small>moving obstacles</small></div>
+      <div><b>Neon Heights</b><small>the city at night</small></div>
+      <div><b>Lunar Orbit</b><small>above the Moon at low gravity</small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="shots/1.jpg" alt="Glass District" loading="lazy">
+      <img src="shots/2.jpg" alt="Glass District, asphalt and ice" loading="lazy">
+      <img src="shots/3.jpg" alt="Sliding blocks" loading="lazy">
+      <img src="shots/4.jpg" alt="Frost Line" loading="lazy">
+      <img src="shots/5.jpg" alt="Dune Towers" loading="lazy">
+      <img src="shots/6.jpg" alt="Steel Works" loading="lazy">
+      <img src="shots/7.jpg" alt="Neon Heights" loading="lazy">
+      <img src="shots/8.jpg" alt="Lunar Orbit" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <div class="offer">
+      <h2>Available for full ownership</h2>
+      <p>Complete source code, all rights and every asset, plus the tools that build the tracks so your team can make new ones. We integrate your SDK and adapt difficulty, branding or track count on request.</p>
+      <p>A license is available too. Plejarena makes new HTML5 games regularly and is happy to offer them for full ownership.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  Plejarena · Fran Grubišić · <a href="mailto:fran@grubsterz.com">fran@grubsterz.com</a> · +385 91 2738 026
+</footer>
+</body>
+</html>

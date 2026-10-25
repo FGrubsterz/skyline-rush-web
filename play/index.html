@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1830" />
+    <title>Skyline Rush</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%2318d1ff'/%3E%3Cpath d='M10 36h44M32 6v52' stroke='%23062a40' stroke-width='5'/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-DVA6H0yO.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-DdMw_yfJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/physics-BR_-CEU_.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-B0jPhDfJ.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="view"></canvas>
+
+      <!-- loading -->
+      <div id="loading" class="screen show">
+        <div class="logo"><span class="sky">SKYLINE</span><span class="rush">RUSH</span></div>
+        <div class="bar"><i id="loadBar"></i></div>
+        <div id="loadText" class="hint">Loading…</div>
+      </div>
+
+      <!-- title -->
+      <div id="title" class="screen">
+        <div class="logo big"><span class="sky">SKYLINE</span><span class="rush">RUSH</span></div>
+        <div class="menu">
+          <button id="bPlay" class="btn primary">PLAY</button>
+          <button id="bHow" class="btn">HOW TO PLAY</button>
+          <button id="bSettings" class="btn">SETTINGS</button>
+        </div>
+        <div id="titleBest" class="best"></div>
+      </div>
+
+      <!-- level select -->
+      <div id="levels" class="screen panel">
+        <h2>Choose a track</h2>
+        <div id="worldTabs" class="tabs"></div>
+        <div id="worldInfo" class="note"></div>
+        <div id="levelGrid" class="grid"></div>
+        <div id="levelStats" class="note"></div>
+        <button id="bLevelsBack" class="btn">BACK</button>
+      </div>
+
+      <!-- how to play -->
+      <div id="how" class="screen panel">
+        <h2>How to play</h2>
+        <div class="howgrid">
+          <div><b>Roll</b><span class="k">W A S D</span> or <span class="k">Arrows</span></div>
+          <div><b>Jump</b><span class="k">Space</span></div>
+          <div><b>Brake</b><span class="k">Shift</span> (or pull back)</div>
+          <div><b>Camera</b><span class="k">Q</span> <span class="k">E</span> or drag the mouse</div>
+          <div><b>Back to checkpoint</b><span class="k">R</span></div>
+          <div><b>Pause</b><span class="k">Esc</span> / <span class="k">P</span></div>
+        </div>
+        <p class="note">Touch: drag on the left to roll, buttons on the right to jump and brake, swipe on the right to look around.</p>
+        <p class="note">Ice is slippery, sand slows you down, rubber bounces. Grab the gems, reach the goal, beat the gold time!</p>
+        <button id="bHowBack" class="btn">BACK</button>
+      </div>
+
+      <!-- settings -->
+      <div id="settings" class="screen panel">
+        <h2>Settings</h2>
+        <label class="row">Graphics
+          <select id="sQuality">
+            <option value="auto">Auto</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <label class="row">Sound <input id="sSfx" type="range" min="0" max="1" step="0.05" /></label>
+        <label class="row">Music <input id="sMusic" type="range" min="0" max="1" step="0.05" /></label>
+        <label class="row">Camera speed <input id="sCam" type="range" min="0.3" max="2" step="0.05" /></label>
+        <label class="row check">Invert camera <input id="sInvert" type="checkbox" /></label>
+        <button id="bSettingsBack" class="btn">BACK</button>
+      </div>
+
+      <!-- HUD -->
+      <div id="hud">
+        <div id="hTime" class="hpanel time">0:00.00</div>
+        <div id="hMedal" class="hpanel medal"></div>
+        <div id="hGems" class="hpanel gems"><i class="gem"></i><span>0/0</span></div>
+        <div id="hSpeed" class="hpanel speed"><b>0</b><small>km/h</small></div>
+        <div id="hProg" class="prog"><i></i></div>
+        <div id="hMsg" class="msg"></div>
+        <div id="hLevel" class="levelname"></div>
+        <div id="hCount" class="count"></div>
+        <button id="bPause" class="iconbtn" aria-label="Pause">II</button>
+      </div>
+
+      <!-- touch controls -->
+      <div id="touch">
+        <div id="stickZone"></div>
+        <div id="stick"><i></i></div>
+        <button id="tJump" class="tbtn jump">JUMP</button>
+        <button id="tBrake" class="tbtn brake">BRAKE</button>
+      </div>
+
+      <!-- pause -->
+      <div id="pause" class="screen panel">
+        <h2>Paused</h2>
+        <div class="menu">
+          <button id="bResume" class="btn primary">RESUME</button>
+          <button id="bRestart" class="btn">RESTART</button>
+          <button id="bPauseSettings" class="btn">SETTINGS</button>
+          <button id="bQuit" class="btn">MENU</button>
+        </div>
+      </div>
+
+      <!-- results -->
+      <div id="results" class="screen panel">
+        <h2 id="rTitle">Finished!</h2>
+        <div id="rMedal" class="bigmedal"></div>
+        <div class="rgrid">
+          <div>Time</div><b id="rTime"></b>
+          <div>Gems</div><b id="rGems"></b>
+          <div>Best</div><b id="rBest"></b>
+        </div>
+        <div id="rTargets" class="targets"></div>
+        <div class="menu row">
+          <button id="bNext" class="btn primary">NEXT</button>
+          <button id="bRetry" class="btn">RETRY</button>
+          <button id="bMenu" class="btn">TRACKS</button>
+        </div>
+      </div>
+
+      <div id="fade"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1054 @@
+{
+  "generated": "2026-10-25",
+  "note": "Poly Haven CC0 textures, KTX2 (Basis Universal). Always load the paths listed here: quality high = 1024 px, low = 512 px, except sets with far=true (only seen from a distance), which ship high = 512 px, low = 256 px, and sets with px512=true (city detail), which ship one 512 px file (high = low). colorSpace: srgb -> texture.colorSpace = SRGBColorSpace, linear -> NoColorSpace. Normal maps are OpenGL (+Y) convention. arm = R ambient occlusion, G roughness, B metalness (use as aoMap + roughnessMap + metalnessMap; aoMap reads R, roughnessMap G, metalnessMap B). tile_m = suggested world-space size of one repeat in metres.",
+  "transcoder": "basis/",
+  "sizes": {
+    "high": 1024,
+    "low": 512,
+    "far": {
+      "high": 512,
+      "low": 256
+    },
+    "px512": {
+      "high": 512,
+      "low": 512
+    }
+  },
+  "sets": {
+    "concrete_floor_01": {
+      "name": "Concrete Floor 01",
+      "use": "concrete track deck",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 4,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m; suggested 4 m so the deck does not show a 2 m repeat",
+      "mean_color_srgb": [
+        0.451,
+        0.423,
+        0.376
+      ],
+      "mean_roughness": 0.525,
+      "mean_metal": 0.006,
+      "maps": {
+        "color": {
+          "high": "tex/concrete_floor_01/color.ktx2",
+          "low": "tex/concrete_floor_01/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 177369,
+            "low": 51529
+          }
+        },
+        "normal": {
+          "high": "tex/concrete_floor_01/normal.ktx2",
+          "low": "tex/concrete_floor_01/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 192351,
+            "low": 52599
+          }
+        },
+        "arm": {
+          "high": "tex/concrete_floor_01/arm.ktx2",
+          "low": "tex/concrete_floor_01/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 160724,
+            "low": 44130
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/concrete_floor_01",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "metal_plate": {
+      "name": "Metal Plate",
+      "use": "metal track deck",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 2,
+      "real_size_m": 0.5,
+      "tile_note": "real size 0.5 m (diamond tread plate); suggested 2 m so the tread reads at marble speed. Source is rusty green-brown: graded to clean cool steel, metal clamped 0.6..1, roughness x0.85",
+      "mean_color_srgb": [
+        0.366,
+        0.382,
+        0.393
+      ],
+      "mean_roughness": 0.501,
+      "mean_metal": 0.634,
+      "maps": {
+        "color": {
+          "high": "tex/metal_plate/color.ktx2",
+          "low": "tex/metal_plate/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 174149,
+            "low": 51180
+          }
+        },
+        "normal": {
+          "high": "tex/metal_plate/normal.ktx2",
+          "low": "tex/metal_plate/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 193328,
+            "low": 56209
+          }
+        },
+        "arm": {
+          "high": "tex/metal_plate/arm.ktx2",
+          "low": "tex/metal_plate/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 156352,
+            "low": 42549
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/metal_plate",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "blue_metal_plate": {
+      "name": "Blue Metal Plate",
+      "use": "obstacles / metal accents",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 2.5,
+      "real_size_m": 2.5,
+      "tile_note": "real size 2.5 m (painted steel panels with seams)",
+      "mean_color_srgb": [
+        0.161,
+        0.245,
+        0.3
+      ],
+      "mean_roughness": 0.285,
+      "mean_metal": 0.002,
+      "maps": {
+        "color": {
+          "high": "tex/blue_metal_plate/color.ktx2",
+          "low": "tex/blue_metal_plate/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 102878,
+            "low": 32854
+          }
+        },
+        "normal": {
+          "high": "tex/blue_metal_plate/normal.ktx2",
+          "low": "tex/blue_metal_plate/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 26075,
+            "low": 7446
+          }
+        },
+        "arm": {
+          "high": "tex/blue_metal_plate/arm.ktx2",
+          "low": "tex/blue_metal_plate/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 79487,
+            "low": 26339
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/blue_metal_plate",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "rubber_tiles": {
+      "name": "Rubber Tiles",
+      "use": "rubber track surface",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 2,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m",
+      "mean_color_srgb": [
+        0.126,
+        0.129,
+        0.145
+      ],
+      "mean_roughness": 0.75,
+      "mean_metal": 0.004,
+      "maps": {
+        "color": {
+          "high": "tex/rubber_tiles/color.ktx2",
+          "low": "tex/rubber_tiles/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 84843,
+            "low": 20511
+          }
+        },
+        "normal": {
+          "high": "tex/rubber_tiles/normal.ktx2",
+          "low": "tex/rubber_tiles/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 50940,
+            "low": 9375
+          }
+        },
+        "arm": {
+          "high": "tex/rubber_tiles/arm.ktx2",
+          "low": "tex/rubber_tiles/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 115424,
+            "low": 27293
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/rubber_tiles",
+      "license": "CC0 1.0",
+      "authors": [
+        "Amal Kumar"
+      ]
+    },
+    "sand_01": {
+      "name": "Sand 01",
+      "use": "sand track surface",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 4,
+      "real_size_m": 1.5,
+      "tile_note": "real size 1.5 m; suggested 4 m so the ripples do not tile visibly",
+      "mean_color_srgb": [
+        0.648,
+        0.585,
+        0.435
+      ],
+      "mean_roughness": 0.988,
+      "mean_metal": 0.005,
+      "maps": {
+        "color": {
+          "high": "tex/sand_01/color.ktx2",
+          "low": "tex/sand_01/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 167693,
+            "low": 48837
+          }
+        },
+        "normal": {
+          "high": "tex/sand_01/normal.ktx2",
+          "low": "tex/sand_01/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 249744,
+            "low": 73634
+          }
+        },
+        "arm": {
+          "high": "tex/sand_01/arm.ktx2",
+          "low": "tex/sand_01/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 126109,
+            "low": 40032
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/sand_01",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "snow_02": {
+      "name": "Snow 02",
+      "use": "frost detail on ice (ice itself is a shader)",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 4,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m; used as a detail layer, suggested 4 m",
+      "mean_color_srgb": [
+        0.648,
+        0.647,
+        0.656
+      ],
+      "mean_roughness": 0.801,
+      "mean_metal": 0.003,
+      "maps": {
+        "color": {
+          "high": "tex/snow_02/color.ktx2",
+          "low": "tex/snow_02/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 145604,
+            "low": 41575
+          }
+        },
+        "normal": {
+          "high": "tex/snow_02/normal.ktx2",
+          "low": "tex/snow_02/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 226913,
+            "low": 65039
+          }
+        },
+        "arm": {
+          "high": "tex/snow_02/arm.ktx2",
+          "low": "tex/snow_02/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 98556,
+            "low": 30760
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/snow_02",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "rock_face_03": {
+      "name": "Rock Face 03",
+      "use": "pylon footings",
+      "far": true,
+      "px512": false,
+      "px": {
+        "high": 512,
+        "low": 256
+      },
+      "tile_m": 6,
+      "real_size_m": 2.7,
+      "tile_note": "real size 2.7 m; suggested 6 m for the large footing blocks",
+      "mean_color_srgb": [
+        0.513,
+        0.411,
+        0.315
+      ],
+      "mean_roughness": 0.818,
+      "mean_metal": 0.005,
+      "maps": {
+        "color": {
+          "high": "tex/rock_face_03/color_512.ktx2",
+          "low": "tex/rock_face_03/color_256.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 50623,
+            "low": 13317
+          }
+        },
+        "normal": {
+          "high": "tex/rock_face_03/normal_512.ktx2",
+          "low": "tex/rock_face_03/normal_256.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 71874,
+            "low": 19128
+          }
+        },
+        "arm": {
+          "high": "tex/rock_face_03/arm_512.ktx2",
+          "low": "tex/rock_face_03/arm_256.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 38727,
+            "low": 10434
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/rock_face_03",
+      "license": "CC0 1.0",
+      "authors": [
+        "Dario Barresi",
+        "Rico Cilliers"
+      ]
+    },
+    "asphalt_02": {
+      "name": "Asphalt 02",
+      "use": "city streets far below the track",
+      "far": true,
+      "px512": false,
+      "px": {
+        "high": 512,
+        "low": 256
+      },
+      "tile_m": 8,
+      "real_size_m": 3,
+      "tile_note": "real size 3 m; suggested 8 m because it is only ever seen from far above",
+      "mean_color_srgb": [
+        0.355,
+        0.352,
+        0.331
+      ],
+      "mean_roughness": 0.77,
+      "mean_metal": 0.014,
+      "maps": {
+        "color": {
+          "high": "tex/asphalt_02/color_512.ktx2",
+          "low": "tex/asphalt_02/color_256.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 48155,
+            "low": 12319
+          }
+        },
+        "normal": {
+          "high": "tex/asphalt_02/normal_512.ktx2",
+          "low": "tex/asphalt_02/normal_256.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 55102,
+            "low": 12594
+          }
+        },
+        "arm": {
+          "high": "tex/asphalt_02/arm_512.ktx2",
+          "low": "tex/asphalt_02/arm_256.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 40788,
+            "low": 10428
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/asphalt_02",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "sandstone_cracks": {
+      "name": "Sandstone Cracks",
+      "use": "world dunes: concrete track deck",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 4,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m; suggested 4 m. Source is strongly orange: desaturated 25 %",
+      "mean_color_srgb": [
+        0.78,
+        0.638,
+        0.504
+      ],
+      "mean_roughness": 0.908,
+      "mean_metal": 0.008,
+      "maps": {
+        "color": {
+          "high": "tex/sandstone_cracks/color.ktx2",
+          "low": "tex/sandstone_cracks/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 165655,
+            "low": 48493
+          }
+        },
+        "normal": {
+          "high": "tex/sandstone_cracks/normal.ktx2",
+          "low": "tex/sandstone_cracks/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 240176,
+            "low": 67299
+          }
+        },
+        "arm": {
+          "high": "tex/sandstone_cracks/arm.ktx2",
+          "low": "tex/sandstone_cracks/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 153454,
+            "low": 39896
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/sandstone_cracks",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "rusty_metal_02": {
+      "name": "Rusty Metal 02",
+      "use": "world steel: metal track deck (worn steel)",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 2,
+      "real_size_m": 1,
+      "tile_note": "real size 1 m; suggested 2 m. Source is white paint with orange rust and no metalness: split by a rust mask (R-B) into bare cool steel (metal 0.9, rough ~0.38) and dark rough rust (metal 0.1, rough ~0.82)",
+      "mean_color_srgb": [
+        0.468,
+        0.457,
+        0.454
+      ],
+      "mean_roughness": 0.55,
+      "mean_metal": 0.591,
+      "maps": {
+        "color": {
+          "high": "tex/rusty_metal_02/color.ktx2",
+          "low": "tex/rusty_metal_02/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 166312,
+            "low": 50661
+          }
+        },
+        "normal": {
+          "high": "tex/rusty_metal_02/normal.ktx2",
+          "low": "tex/rusty_metal_02/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 159213,
+            "low": 44875
+          }
+        },
+        "arm": {
+          "high": "tex/rusty_metal_02/arm.ktx2",
+          "low": "tex/rusty_metal_02/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 132587,
+            "low": 37066
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/rusty_metal_02",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "asphalt_track": {
+      "name": "Asphalt Track",
+      "use": "world neon: concrete track deck",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 4,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m; suggested 4 m. Dark (mean albedo ~0.12), as real asphalt",
+      "mean_color_srgb": [
+        0.135,
+        0.117,
+        0.112
+      ],
+      "mean_roughness": 0.831,
+      "mean_metal": 0.002,
+      "maps": {
+        "color": {
+          "high": "tex/asphalt_track/color.ktx2",
+          "low": "tex/asphalt_track/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 151650,
+            "low": 43678
+          }
+        },
+        "normal": {
+          "high": "tex/asphalt_track/normal.ktx2",
+          "low": "tex/asphalt_track/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 168518,
+            "low": 44247
+          }
+        },
+        "arm": {
+          "high": "tex/asphalt_track/arm.ktx2",
+          "low": "tex/asphalt_track/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 89446,
+            "low": 21515
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/asphalt_track",
+      "license": "CC0 1.0",
+      "authors": [
+        "Dimitrios Savva"
+      ]
+    },
+    "snow_floor": {
+      "name": "Snow Floor",
+      "use": "world frost: concrete track deck (packed snow / frosted concrete)",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 4,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m; suggested 4 m. Source is a mid-grey speckled surface: remapped to light cool white (packed snow), roughness x0.85 for a slight frost sheen",
+      "mean_color_srgb": [
+        0.79,
+        0.823,
+        0.86
+      ],
+      "mean_roughness": 0.702,
+      "mean_metal": 0.003,
+      "maps": {
+        "color": {
+          "high": "tex/snow_floor/color.ktx2",
+          "low": "tex/snow_floor/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 171123,
+            "low": 48960
+          }
+        },
+        "normal": {
+          "high": "tex/snow_floor/normal.ktx2",
+          "low": "tex/snow_floor/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 214314,
+            "low": 61258
+          }
+        },
+        "arm": {
+          "high": "tex/snow_floor/arm.ktx2",
+          "low": "tex/snow_floor/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 113682,
+            "low": 29433
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/snow_floor",
+      "license": "CC0 1.0",
+      "authors": [
+        "eye-candy.xyz"
+      ]
+    },
+    "moon_02": {
+      "name": "Moon 02",
+      "use": "world orbit: lunar ground far below the track",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 3.1,
+      "real_size_m": 3.1,
+      "tile_note": "real size 3.1 m (tile_m = real size). Seen from far above: scale it up in the game (or blend two scales) if the repeat shows. Beige source desaturated 60 % to lunar grey",
+      "mean_color_srgb": [
+        0.48,
+        0.47,
+        0.455
+      ],
+      "mean_roughness": 0.967,
+      "mean_metal": 0.004,
+      "maps": {
+        "color": {
+          "high": "tex/moon_02/color.ktx2",
+          "low": "tex/moon_02/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 54650,
+            "low": 10676
+          }
+        },
+        "normal": {
+          "high": "tex/moon_02/normal.ktx2",
+          "low": "tex/moon_02/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 233320,
+            "low": 66431
+          }
+        },
+        "arm": {
+          "high": "tex/moon_02/arm.ktx2",
+          "low": "tex/moon_02/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 123114,
+            "low": 33297
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/moon_02",
+      "license": "CC0 1.0",
+      "authors": [
+        "Greg Zaal",
+        "Rico Cilliers",
+        "Jenelle van Heerden",
+        "Dario Barresi"
+      ]
+    },
+    "moon_meteor_01": {
+      "name": "Moon Meteor 01",
+      "use": "world orbit: cratered lunar ground far below the track",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 3.2,
+      "real_size_m": 3.2,
+      "tile_note": "real size 3.2 m (tile_m = real size), small craters. Desaturated 60 %",
+      "mean_color_srgb": [
+        0.482,
+        0.472,
+        0.455
+      ],
+      "mean_roughness": 0.963,
+      "mean_metal": 0.002,
+      "maps": {
+        "color": {
+          "high": "tex/moon_meteor_01/color.ktx2",
+          "low": "tex/moon_meteor_01/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 59366,
+            "low": 14520
+          }
+        },
+        "normal": {
+          "high": "tex/moon_meteor_01/normal.ktx2",
+          "low": "tex/moon_meteor_01/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 226012,
+            "low": 64618
+          }
+        },
+        "arm": {
+          "high": "tex/moon_meteor_01/arm.ktx2",
+          "low": "tex/moon_meteor_01/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 103945,
+            "low": 28818
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/moon_meteor_01",
+      "license": "CC0 1.0",
+      "authors": [
+        "Greg Zaal",
+        "Rico Cilliers",
+        "Jenelle van Heerden"
+      ]
+    },
+    "metal_plate_02": {
+      "name": "Metal Plate 02",
+      "use": "world orbit: space-station track deck (clean sci-fi panels)",
+      "far": false,
+      "px512": false,
+      "px": {
+        "high": 1024,
+        "low": 512
+      },
+      "tile_m": 2,
+      "real_size_m": 2,
+      "tile_note": "real size 2 m (large riveted panels). Source is dark grimy brown metal: flattened, remapped to light cool grey, metal clamped 0.7..1, roughness x0.7",
+      "mean_color_srgb": [
+        0.608,
+        0.629,
+        0.657
+      ],
+      "mean_roughness": 0.461,
+      "mean_metal": 0.916,
+      "maps": {
+        "color": {
+          "high": "tex/metal_plate_02/color.ktx2",
+          "low": "tex/metal_plate_02/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 147439,
+            "low": 43702
+          }
+        },
+        "normal": {
+          "high": "tex/metal_plate_02/normal.ktx2",
+          "low": "tex/metal_plate_02/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 42885,
+            "low": 13565
+          }
+        },
+        "arm": {
+          "high": "tex/metal_plate_02/arm.ktx2",
+          "low": "tex/metal_plate_02/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 172243,
+            "low": 48037
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/metal_plate_02",
+      "license": "CC0 1.0",
+      "authors": [
+        "Rob Tuytel"
+      ]
+    },
+    "concrete_tile_facade": {
+      "name": "Concrete Tile Facade",
+      "use": "city detail: building facades near the track",
+      "far": false,
+      "px512": true,
+      "px": {
+        "high": 512,
+        "low": 512
+      },
+      "tile_m": 2.1,
+      "real_size_m": 2.09,
+      "tile_note": "real size 2.1 m (dark grey facade tiles); 512 px only",
+      "mean_color_srgb": [
+        0.214,
+        0.22,
+        0.237
+      ],
+      "mean_roughness": 0.508,
+      "mean_metal": 0.008,
+      "maps": {
+        "color": {
+          "high": "tex/concrete_tile_facade/color_512.ktx2",
+          "low": "tex/concrete_tile_facade/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 36304,
+            "low": 36304
+          }
+        },
+        "normal": {
+          "high": "tex/concrete_tile_facade/normal_512.ktx2",
+          "low": "tex/concrete_tile_facade/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "UASTC rdo3 normal_map",
+          "bytes": {
+            "high": 164978,
+            "low": 164978
+          }
+        },
+        "arm": {
+          "high": "tex/concrete_tile_facade/arm_512.ktx2",
+          "low": "tex/concrete_tile_facade/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 22468,
+            "low": 22468
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/concrete_tile_facade",
+      "license": "CC0 1.0",
+      "authors": [
+        "Charlotte Baglioni"
+      ]
+    },
+    "concrete_wall_007": {
+      "name": "Concrete Wall 007",
+      "use": "city detail: building bases / parapets near the track",
+      "far": false,
+      "px512": true,
+      "px": {
+        "high": 512,
+        "low": 512
+      },
+      "tile_m": 2.2,
+      "real_size_m": 2.16,
+      "tile_note": "real size 2.2 m (board-formed concrete); desaturated 30 %; 512 px only",
+      "mean_color_srgb": [
+        0.534,
+        0.51,
+        0.455
+      ],
+      "mean_roughness": 0.774,
+      "mean_metal": 0.003,
+      "maps": {
+        "color": {
+          "high": "tex/concrete_wall_007/color_512.ktx2",
+          "low": "tex/concrete_wall_007/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 41805,
+            "low": 41805
+          }
+        },
+        "normal": {
+          "high": "tex/concrete_wall_007/normal_512.ktx2",
+          "low": "tex/concrete_wall_007/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q160 normal_map",
+          "bytes": {
+            "high": 26151,
+            "low": 26151
+          }
+        },
+        "arm": {
+          "high": "tex/concrete_wall_007/arm_512.ktx2",
+          "low": "tex/concrete_wall_007/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 32021,
+            "low": 32021
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/concrete_wall_007",
+      "license": "CC0 1.0",
+      "authors": [
+        "Dario Barresi",
+        "Rico Cilliers",
+        "Charlotte Baglioni"
+      ]
+    },
+    "corrugated_iron_02": {
+      "name": "Corrugated Iron 02",
+      "use": "city detail: rooftop sheds / cladding",
+      "far": false,
+      "px512": true,
+      "px": {
+        "high": 512,
+        "low": 512
+      },
+      "tile_m": 2.7,
+      "real_size_m": 2.7,
+      "tile_note": "real size 2.7 m (grey corrugated sheet); 512 px only",
+      "mean_color_srgb": [
+        0.348,
+        0.345,
+        0.318
+      ],
+      "mean_roughness": 0.521,
+      "mean_metal": 0.199,
+      "maps": {
+        "color": {
+          "high": "tex/corrugated_iron_02/color_512.ktx2",
+          "low": "tex/corrugated_iron_02/color_512.ktx2",
+          "colorSpace": "srgb",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 36803,
+            "low": 36803
+          }
+        },
+        "normal": {
+          "high": "tex/corrugated_iron_02/normal_512.ktx2",
+          "low": "tex/corrugated_iron_02/normal_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "UASTC rdo3 normal_map",
+          "bytes": {
+            "high": 121566,
+            "low": 121566
+          }
+        },
+        "arm": {
+          "high": "tex/corrugated_iron_02/arm_512.ktx2",
+          "low": "tex/corrugated_iron_02/arm_512.ktx2",
+          "colorSpace": "linear",
+          "codec": "ETC1S q128",
+          "bytes": {
+            "high": 31976,
+            "low": 31976
+          }
+        }
+      },
+      "source": "https://polyhaven.com/a/corrugated_iron_02",
+      "license": "CC0 1.0",
+      "authors": [
+        "Jenelle van Heerden",
+        "Sergej Majboroda"
+      ]
+    }
+  }
+}

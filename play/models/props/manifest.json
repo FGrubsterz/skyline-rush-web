@@ -1,0 +1,879 @@
+{
+  "exterior_aircon_unit": {
+    "file": "models/props/exterior_aircon_unit.glb",
+    "nodes": [
+      {
+        "name": "aircon_unit",
+        "tris": 2505,
+        "size": [
+          0.796,
+          0.928,
+          0.374
+        ],
+        "min": [
+          -0.391,
+          -0.32,
+          -0.216
+        ],
+        "max": [
+          0.405,
+          0.608,
+          0.158
+        ]
+      }
+    ],
+    "tris": 2505,
+    "size": [
+      0.796,
+      0.928,
+      0.374
+    ],
+    "min": [
+      -0.391,
+      -0.32,
+      -0.216
+    ],
+    "max": [
+      0.405,
+      0.608,
+      0.158
+    ],
+    "origin": "other (offset by -min)",
+    "materials": [
+      {
+        "name": "exterior_aircon_unit_01",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      },
+      {
+        "name": "exterior_aircon_unit_02",
+        "alpha": "MASK",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 182596,
+    "use": "rooftop decoration",
+    "source": "https://polyhaven.com/a/exterior_aircon_unit",
+    "license": "CC0 1.0"
+  },
+  "modular_airduct_rectangular_01": {
+    "file": "models/props/modular_airduct_rectangular_01.glb",
+    "nodes": [
+      {
+        "name": "duct_straight",
+        "tris": 1039,
+        "size": [
+          0.663,
+          0.512,
+          0.6
+        ],
+        "min": [
+          -0.331,
+          -0.256,
+          0
+        ],
+        "max": [
+          0.331,
+          0.256,
+          0.6
+        ]
+      },
+      {
+        "name": "duct_bend",
+        "tris": 1087,
+        "size": [
+          0.663,
+          0.631,
+          0.631
+        ],
+        "min": [
+          -0.331,
+          -0.256,
+          0
+        ],
+        "max": [
+          0.331,
+          0.375,
+          0.631
+        ]
+      },
+      {
+        "name": "duct_vent",
+        "tris": 390,
+        "size": [
+          0.552,
+          0.42,
+          0.06
+        ],
+        "min": [
+          -0.276,
+          -0.21,
+          0.026
+        ],
+        "max": [
+          0.276,
+          0.21,
+          0.087
+        ]
+      },
+      {
+        "name": "duct_brace",
+        "tris": 92,
+        "size": [
+          0.69,
+          0.045,
+          0.039
+        ],
+        "min": [
+          -0.345,
+          -0.011,
+          -0.017
+        ],
+        "max": [
+          0.345,
+          0.034,
+          0.022
+        ]
+      }
+    ],
+    "tris": 2608,
+    "size": [
+      0.69,
+      0.631,
+      0.648
+    ],
+    "min": [
+      -0.345,
+      -0.256,
+      -0.017
+    ],
+    "max": [
+      0.345,
+      0.375,
+      0.631
+    ],
+    "origin": "other (offset by -min)",
+    "materials": [
+      {
+        "name": "modular_airduct_rectangular_01_parts02",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      },
+      {
+        "name": "modular_airduct_rectangular_01_parts01",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 230084,
+    "use": "rooftop decoration (duct kit: pick nodes by name; every piece sits at the origin)",
+    "source": "https://polyhaven.com/a/modular_airduct_rectangular_01",
+    "license": "CC0 1.0"
+  },
+  "utility_box_02": {
+    "file": "models/props/utility_box_02.glb",
+    "nodes": [
+      {
+        "name": "utility_box",
+        "tris": 2781,
+        "size": [
+          0.92,
+          1.12,
+          0.432
+        ],
+        "min": [
+          -0.46,
+          0,
+          -0.21
+        ],
+        "max": [
+          0.46,
+          1.12,
+          0.222
+        ]
+      }
+    ],
+    "tris": 2781,
+    "size": [
+      0.92,
+      1.12,
+      0.432
+    ],
+    "min": [
+      -0.46,
+      0,
+      -0.21
+    ],
+    "max": [
+      0.46,
+      1.12,
+      0.222
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "utility_box_02",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 145156,
+    "use": "rooftop decoration",
+    "source": "https://polyhaven.com/a/utility_box_02",
+    "license": "CC0 1.0"
+  },
+  "power_box_01": {
+    "file": "models/props/power_box_01.glb",
+    "nodes": [
+      {
+        "name": "power_box_door",
+        "tris": 170,
+        "size": [
+          0.126,
+          0.487,
+          0.311
+        ],
+        "min": [
+          -0.231,
+          0.006,
+          -0.112
+        ],
+        "max": [
+          -0.105,
+          0.493,
+          0.199
+        ]
+      },
+      {
+        "name": "power_box",
+        "tris": 2400,
+        "size": [
+          0.345,
+          0.503,
+          0.095
+        ],
+        "min": [
+          -0.115,
+          0,
+          -0.2
+        ],
+        "max": [
+          0.23,
+          0.503,
+          -0.105
+        ]
+      }
+    ],
+    "tris": 2570,
+    "size": [
+      0.461,
+      0.503,
+      0.399
+    ],
+    "min": [
+      -0.231,
+      0,
+      -0.2
+    ],
+    "max": [
+      0.23,
+      0.503,
+      0.199
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "power_box_01",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 153064,
+    "use": "track-side: platform edges (electrical cabinet; the door is a separate node, ajar as in the source)",
+    "source": "https://polyhaven.com/a/power_box_01",
+    "license": "CC0 1.0"
+  },
+  "metal_trash_can": {
+    "file": "models/props/metal_trash_can.glb",
+    "nodes": [
+      {
+        "name": "trash_can_handle_left",
+        "tris": 184,
+        "size": [
+          0.072,
+          0.089,
+          0.186
+        ],
+        "min": [
+          -0.261,
+          0.642,
+          -0.093
+        ],
+        "max": [
+          -0.19,
+          0.731,
+          0.093
+        ]
+      },
+      {
+        "name": "trash_can_lid",
+        "tris": 686,
+        "size": [
+          0.184,
+          0.539,
+          0.554
+        ],
+        "min": [
+          -0.389,
+          0.009,
+          -0.277
+        ],
+        "max": [
+          -0.205,
+          0.548,
+          0.277
+        ]
+      },
+      {
+        "name": "trash_can",
+        "tris": 1795,
+        "size": [
+          0.61,
+          0.906,
+          0.552
+        ],
+        "min": [
+          -0.241,
+          0,
+          -0.276
+        ],
+        "max": [
+          0.369,
+          0.906,
+          0.276
+        ]
+      },
+      {
+        "name": "trash_can_handle_right",
+        "tris": 184,
+        "size": [
+          0.072,
+          0.089,
+          0.186
+        ],
+        "min": [
+          0.316,
+          0.642,
+          -0.093
+        ],
+        "max": [
+          0.388,
+          0.731,
+          0.093
+        ]
+      }
+    ],
+    "tris": 2849,
+    "size": [
+      0.777,
+      0.906,
+      0.554
+    ],
+    "min": [
+      -0.389,
+      0,
+      -0.277
+    ],
+    "max": [
+      0.388,
+      0.906,
+      0.277
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "metal_trash_can",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 145408,
+    "use": "track-side: platform edges (clean variant; the rusted twin is dropped)",
+    "source": "https://polyhaven.com/a/metal_trash_can",
+    "license": "CC0 1.0"
+  },
+  "Barrel_01": {
+    "file": "models/props/Barrel_01.glb",
+    "nodes": [
+      {
+        "name": "barrel",
+        "tris": 2682,
+        "size": [
+          0.563,
+          0.88,
+          0.563
+        ],
+        "min": [
+          -0.282,
+          0,
+          -0.282
+        ],
+        "max": [
+          0.282,
+          0.88,
+          0.282
+        ]
+      }
+    ],
+    "tris": 2682,
+    "size": [
+      0.563,
+      0.88,
+      0.563
+    ],
+    "min": [
+      -0.282,
+      0,
+      -0.282
+    ],
+    "max": [
+      0.282,
+      0.88,
+      0.282
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "Barrel_01",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 138476,
+    "use": "track-side: platform edges (red hazard barrel)",
+    "source": "https://polyhaven.com/a/Barrel_01",
+    "license": "CC0 1.0"
+  },
+  "potted_plant_02": {
+    "file": "models/props/potted_plant_02.glb",
+    "nodes": [
+      {
+        "name": "plant_pot",
+        "tris": 800,
+        "size": [
+          0.47,
+          0.336,
+          0.473
+        ],
+        "min": [
+          -0.189,
+          0,
+          -0.145
+        ],
+        "max": [
+          0.281,
+          0.336,
+          0.327
+        ]
+      },
+      {
+        "name": "plant_leaves",
+        "tris": 1863,
+        "size": [
+          0.701,
+          0.631,
+          0.643
+        ],
+        "min": [
+          -0.35,
+          0.209,
+          -0.329
+        ],
+        "max": [
+          0.351,
+          0.84,
+          0.315
+        ]
+      },
+      {
+        "name": "plant_dirt",
+        "tris": 50,
+        "size": [
+          0.333,
+          0.008,
+          0.328
+        ],
+        "min": [
+          -0.123,
+          0.314,
+          -0.072
+        ],
+        "max": [
+          0.209,
+          0.322,
+          0.255
+        ]
+      }
+    ],
+    "tris": 2713,
+    "size": [
+      0.701,
+      0.84,
+      0.656
+    ],
+    "min": [
+      -0.35,
+      0,
+      -0.329
+    ],
+    "max": [
+      0.351,
+      0.84,
+      0.327
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "potted_plant_02_pot",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      },
+      {
+        "name": "potted_plant_02_leaves",
+        "alpha": "MASK",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 203980,
+    "use": "goal areas (leaves are alphaMode MASK, double-sided)",
+    "source": "https://polyhaven.com/a/potted_plant_02",
+    "license": "CC0 1.0"
+  },
+  "street_lamp_01": {
+    "file": "models/props/street_lamp_01.glb",
+    "nodes": [
+      {
+        "name": "street_lamp",
+        "tris": 2790,
+        "size": [
+          0.701,
+          3.87,
+          0.385
+        ],
+        "min": [
+          -0.349,
+          0,
+          -0.192
+        ],
+        "max": [
+          0.352,
+          3.87,
+          0.193
+        ]
+      }
+    ],
+    "tris": 2790,
+    "size": [
+      0.701,
+      3.87,
+      0.385
+    ],
+    "min": [
+      -0.349,
+      0,
+      -0.192
+    ],
+    "max": [
+      0.352,
+      3.87,
+      0.193
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "street_lamp_01",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      },
+      {
+        "name": "street_lamp_01_glass",
+        "alpha": "BLEND",
+        "doubleSided": true
+      },
+      {
+        "name": "street_lamp_01_bulb",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 118664,
+    "use": "platform edges / goal areas (3.9 m post; materials street_lamp_01_glass = BLEND, street_lamp_01_bulb = make emissive in the game)",
+    "source": "https://polyhaven.com/a/street_lamp_01",
+    "license": "CC0 1.0"
+  },
+  "security_camera_01": {
+    "file": "models/props/security_camera_01.glb",
+    "nodes": [
+      {
+        "name": "security_camera",
+        "tris": 2673,
+        "size": [
+          0.17,
+          0.285,
+          0.554
+        ],
+        "min": [
+          -0.085,
+          0.001,
+          -0.277
+        ],
+        "max": [
+          0.085,
+          0.285,
+          0.277
+        ]
+      }
+    ],
+    "tris": 2673,
+    "size": [
+      0.17,
+      0.285,
+      0.554
+    ],
+    "min": [
+      -0.085,
+      0.001,
+      -0.277
+    ],
+    "max": [
+      0.085,
+      0.285,
+      0.277
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "security_camera_01",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      },
+      {
+        "name": "security_camera_01_glass",
+        "alpha": "BLEND",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 141384,
+    "use": "walls / poles: the lens looks along +Z, the mounting bracket is under the -Z end; lens material security_camera_01_glass = BLEND",
+    "source": "https://polyhaven.com/a/security_camera_01",
+    "license": "CC0 1.0"
+  },
+  "moon_rock_02": {
+    "file": "models/props/moon_rock_02.glb",
+    "nodes": [
+      {
+        "name": "moon_rock_02",
+        "tris": 2808,
+        "size": [
+          0.247,
+          0.202,
+          0.251
+        ],
+        "min": [
+          -0.123,
+          0,
+          -0.126
+        ],
+        "max": [
+          0.123,
+          0.202,
+          0.126
+        ]
+      }
+    ],
+    "tris": 2808,
+    "size": [
+      0.247,
+      0.202,
+      0.251
+    ],
+    "min": [
+      -0.123,
+      0,
+      -0.126
+    ],
+    "max": [
+      0.123,
+      0.202,
+      0.126
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "moon_rock_02",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 109524,
+    "use": "world orbit: chunky boulder on the lunar ground (real size 25 x 20 x 25 cm: scale up freely)",
+    "source": "https://polyhaven.com/a/moon_rock_02",
+    "license": "CC0 1.0"
+  },
+  "moon_rock_04": {
+    "file": "models/props/moon_rock_04.glb",
+    "nodes": [
+      {
+        "name": "moon_rock_04",
+        "tris": 2878,
+        "size": [
+          0.12,
+          0.054,
+          0.174
+        ],
+        "min": [
+          -0.06,
+          0,
+          -0.087
+        ],
+        "max": [
+          0.06,
+          0.054,
+          0.087
+        ]
+      }
+    ],
+    "tris": 2878,
+    "size": [
+      0.12,
+      0.054,
+      0.174
+    ],
+    "min": [
+      -0.06,
+      0,
+      -0.087
+    ],
+    "max": [
+      0.06,
+      0.054,
+      0.087
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "moon_rock_04",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 108148,
+    "use": "world orbit: flat rock slab (real size 12 x 5 x 17 cm: scale up freely)",
+    "source": "https://polyhaven.com/a/moon_rock_04",
+    "license": "CC0 1.0"
+  },
+  "moon_rock_05": {
+    "file": "models/props/moon_rock_05.glb",
+    "nodes": [
+      {
+        "name": "moon_rock_05",
+        "tris": 2684,
+        "size": [
+          0.072,
+          0.073,
+          0.081
+        ],
+        "min": [
+          -0.036,
+          0,
+          -0.041
+        ],
+        "max": [
+          0.036,
+          0.073,
+          0.041
+        ]
+      }
+    ],
+    "tris": 2684,
+    "size": [
+      0.072,
+      0.073,
+      0.081
+    ],
+    "min": [
+      -0.036,
+      0,
+      -0.041
+    ],
+    "max": [
+      0.036,
+      0.073,
+      0.041
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "moon_rock_05",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 101460,
+    "use": "world orbit: wedge-shaped rock (real size 7 x 7 x 8 cm: scale up freely)",
+    "source": "https://polyhaven.com/a/moon_rock_05",
+    "license": "CC0 1.0"
+  },
+  "moon_rock_06": {
+    "file": "models/props/moon_rock_06.glb",
+    "nodes": [
+      {
+        "name": "moon_rock_06",
+        "tris": 2608,
+        "size": [
+          0.086,
+          0.055,
+          0.092
+        ],
+        "min": [
+          -0.043,
+          0,
+          -0.046
+        ],
+        "max": [
+          0.043,
+          0.055,
+          0.046
+        ]
+      }
+    ],
+    "tris": 2608,
+    "size": [
+      0.086,
+      0.055,
+      0.092
+    ],
+    "min": [
+      -0.043,
+      0,
+      -0.046
+    ],
+    "max": [
+      0.043,
+      0.055,
+      0.046
+    ],
+    "origin": "base-centre",
+    "materials": [
+      {
+        "name": "moon_rock_06",
+        "alpha": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "bytes": 108760,
+    "use": "world orbit: low faceted boulder (real size 9 x 5.5 x 9 cm: scale up freely)",
+    "source": "https://polyhaven.com/a/moon_rock_06",
+    "license": "CC0 1.0"
+  }
+}

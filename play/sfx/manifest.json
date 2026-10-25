@@ -1,0 +1,287 @@
+{
+  "sounds": {
+    "roll_concrete": {
+      "file": "sfx/roll_concrete.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 3,
+      "peakDb": -4.15,
+      "lufs": -20.4,
+      "volume": 0.65,
+      "bytes": 37973
+    },
+    "roll_metal": {
+      "file": "sfx/roll_metal.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 3,
+      "peakDb": -5.89,
+      "lufs": -20.4,
+      "volume": 0.65,
+      "bytes": 37973
+    },
+    "roll_ice": {
+      "file": "sfx/roll_ice.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 3,
+      "peakDb": -9.84,
+      "lufs": -20.4,
+      "volume": 0.6,
+      "bytes": 37973
+    },
+    "roll_rubber": {
+      "file": "sfx/roll_rubber.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 3,
+      "peakDb": -6.12,
+      "lufs": -20.4,
+      "volume": 0.65,
+      "bytes": 37973
+    },
+    "roll_sand": {
+      "file": "sfx/roll_sand.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 3,
+      "peakDb": -3.21,
+      "lufs": -20.4,
+      "volume": 0.6,
+      "bytes": 37973
+    },
+    "skid": {
+      "file": "sfx/skid.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 2,
+      "peakDb": -5.38,
+      "lufs": -19.4,
+      "volume": 0.55,
+      "bytes": 26062
+    },
+    "wind": {
+      "file": "sfx/wind.mp3",
+      "loop": true,
+      "channels": 2,
+      "duration": 4,
+      "peakDb": -7.59,
+      "lufs": -20.3,
+      "volume": 0.5,
+      "bytes": 58192
+    },
+    "platform_hum": {
+      "file": "sfx/platform_hum.mp3",
+      "loop": true,
+      "channels": 1,
+      "duration": 2,
+      "peakDb": -9.75,
+      "lufs": -20.4,
+      "volume": 0.4,
+      "bytes": 26062
+    },
+    "music": {
+      "file": "sfx/music.mp3",
+      "loop": true,
+      "channels": 2,
+      "duration": 45,
+      "peakDb": -2.19,
+      "lufs": -14.1,
+      "volume": 0.35,
+      "bytes": 632363
+    },
+    "impact_concrete": {
+      "file": "sfx/impact_concrete.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.6,
+      "peakDb": -1.57,
+      "loudness150ms": -12.6,
+      "volume": 0.9,
+      "bytes": 5490
+    },
+    "impact_metal": {
+      "file": "sfx/impact_metal.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.85,
+      "peakDb": -2.47,
+      "loudness150ms": -12.3,
+      "volume": 0.85,
+      "bytes": 6028
+    },
+    "impact_rubber": {
+      "file": "sfx/impact_rubber.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.5,
+      "peakDb": -2.5,
+      "loudness150ms": -11.6,
+      "volume": 0.8,
+      "bytes": 3271
+    },
+    "impact_sand": {
+      "file": "sfx/impact_sand.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.45,
+      "peakDb": -2.06,
+      "loudness150ms": -12.2,
+      "volume": 0.8,
+      "bytes": 5179
+    },
+    "impact_ice": {
+      "file": "sfx/impact_ice.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.5,
+      "peakDb": -2.48,
+      "loudness150ms": -12.6,
+      "volume": 0.9,
+      "bytes": 4028
+    },
+    "impact_rail": {
+      "file": "sfx/impact_rail.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.4085,
+      "peakDb": -2.53,
+      "loudness150ms": -12.8,
+      "volume": 0.9,
+      "bytes": 3300
+    },
+    "jump": {
+      "file": "sfx/jump.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.45,
+      "peakDb": -2.35,
+      "loudness150ms": -10.9,
+      "volume": 0.45,
+      "bytes": 5391
+    },
+    "land": {
+      "file": "sfx/land.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.65,
+      "peakDb": -2.41,
+      "loudness150ms": -12.1,
+      "volume": 0.7,
+      "bytes": 5463
+    },
+    "gem": {
+      "file": "sfx/gem.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 1.1,
+      "peakDb": -2.52,
+      "loudness150ms": -11.2,
+      "volume": 0.5,
+      "bytes": 9074
+    },
+    "checkpoint": {
+      "file": "sfx/checkpoint.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 1.4,
+      "peakDb": -2.54,
+      "loudness150ms": -11.9,
+      "volume": 0.65,
+      "bytes": 13411
+    },
+    "finish": {
+      "file": "sfx/finish.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 2.8,
+      "peakDb": -2.34,
+      "loudness150ms": -12.3,
+      "volume": 0.8,
+      "bytes": 27314
+    },
+    "fall": {
+      "file": "sfx/fall.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 1.3,
+      "peakDb": -2.18,
+      "loudness150ms": -11,
+      "volume": 0.5,
+      "bytes": 13421
+    },
+    "respawn": {
+      "file": "sfx/respawn.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 1,
+      "peakDb": -2.48,
+      "loudness150ms": -11.1,
+      "volume": 0.5,
+      "bytes": 11879
+    },
+    "countdown": {
+      "file": "sfx/countdown.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.26,
+      "peakDb": -7.58,
+      "loudness150ms": -11,
+      "volume": 0.45,
+      "bytes": 2048
+    },
+    "go": {
+      "file": "sfx/go.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.6087,
+      "peakDb": -7.02,
+      "loudness150ms": -11,
+      "volume": 0.55,
+      "bytes": 7397
+    },
+    "ui_click": {
+      "file": "sfx/ui_click.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.08,
+      "peakDb": -2.83,
+      "loudness150ms": -20.2,
+      "volume": 0.45,
+      "bytes": 1529
+    },
+    "ui_hover": {
+      "file": "sfx/ui_hover.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.045,
+      "peakDb": -3.1,
+      "loudness150ms": -18,
+      "volume": 0.35,
+      "bytes": 1165
+    },
+    "boost": {
+      "file": "sfx/boost.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.95,
+      "peakDb": -2.39,
+      "loudness150ms": -11.6,
+      "volume": 0.55,
+      "bytes": 11330
+    },
+    "pusher_thud": {
+      "file": "sfx/pusher_thud.mp3",
+      "loop": false,
+      "channels": 1,
+      "duration": 0.8,
+      "peakDb": -2.35,
+      "loudness150ms": -12.6,
+      "volume": 0.85,
+      "bytes": 8571
+    }
+  },
+  "generator": "tools/make-sounds.mjs (offline synthesis, no samples)",
+  "note": "volume = recommended base gain 0..1 at full intensity (rolling/skid/wind: at full speed; impacts: hardest hit); loops are gapless MP3 (LAME delay/padding tag) and must be played from a decoded buffer (Web Audio) to loop seamlessly",
+  "totalBytes": 1077833
+}
